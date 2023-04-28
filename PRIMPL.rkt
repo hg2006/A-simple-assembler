@@ -276,12 +276,9 @@
     'jsr jsr
     'branch branch))
 
-;(vars [(x 10) (y 1)]
-;  (while (> x 0)
-;    (set y (* 2 y))
-;    (set x (- x 1))
-;    (print y)
-;    (print "\n")))
+;;------------------------------- Example Program ---------------------------------------------------
+
+;; This PRIMPL program below calculates and prints the powers of 2, from 1 to 10:
 
 (define test-prog
   '((gt (11) (9) 0)      ; 0: tmp1 <- x > 0
@@ -297,6 +294,10 @@
      1                   ; 10: y
      0                   ; 11: tmp1
      ))
+
+;; Uncomment the following to run the simulator on Example Program
+;(load-primp test-prog)
+;(run-primp)
 
 ;(load-primp test-prog)
 ;(run-primp)
