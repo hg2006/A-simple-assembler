@@ -21,7 +21,7 @@ We will define 12 as referring to number 12, and (12) as fetching the value at l
 3. Operations <br>
 Regular op: add sub mul div mod equal not-equal gt ge lt le land lor lnot <br>
 e.g. (add (15) (11) (12)) => "M\[15] (value at memory location 15) <- M\[11] + M\[12]" <br>
-&emsp; (add (15) (11) 1) => "M\[15] <- M\[11] + 1" <br>
+&emsp; &ensp; (add (15) (11) 1) => "M\[15] <- M\[11] + 1" <br>
 
 4. Move <br>
 (move (10) (12)) => "M\[10] <- M\[12]" <br>
