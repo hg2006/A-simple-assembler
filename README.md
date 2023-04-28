@@ -104,3 +104,5 @@ program	 	=	 	stmt-or-value ... <br>
 Please refer to [Q8:Assembler](https://github.com/hg2006/Primpl-Assembler-W23-CS-146/issues/1#issue-1687729289) for further details and restrictions on the use of psymbols in A-PRIMPL.
 
 ## An Example Program in A-PRIMPL and PRIMPL
+This A-PRIMPL program below calculates and prints the powers of 2, from 1 to 10:
+
