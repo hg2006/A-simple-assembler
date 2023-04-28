@@ -18,7 +18,7 @@ Note there are still some remaining "higher-level" features of PRIMPL that makes
 This project is about writing an assembler from A-PRIMPL to PRIMPL, completed as an assignment question of CS 146, W23 offering. No starter code has been given except for the [PRIMPL simulator](PRIMPL.rkt), which was for the use of helping understand the core of PRIMIPL as well as facilitating debugging process. Considering its difficulty, the instructor team has allowed this assignment to be completed in pairs.
 <br><br>
 
-## Grammar and Other Details of PPRIMPL (Grammar Provided in Haskell)
+## Grammar and Other Details of PRIMPL 
 
 1. PC (Program Counter) <br>
 PC is a variable that holds the location of the next instruction to be executed. It is assumed to be a separate variable outside of the RAM (This corresponds to the fact that the role of PC is played by a special register). 
@@ -42,8 +42,9 @@ e.g. (add (15) (11) (12)) => "M\[15] (value at memory location 15) <- M\[11] + M
 6. Print <br>
 (print-val 21) <br>
 (print (15)) <br>
-(print-string "\n") <br>
+(print-string "\n") <br> <br>
 
+The following grammar tree of PRIMPL is provided in Haskell <br> <br>
 program	 	=	 	stmt-or-value ... <br>
  	 	 	 	 
   stmt	 	=	 	(add dest opd opd) <br>
