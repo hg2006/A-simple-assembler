@@ -45,7 +45,10 @@ e.g. (add (15) (11) (12)) => "M\[15] (value at memory location 15) <- M\[11] + M
 (print (15)) <br>
 (print-string "\n") <br> <br>
 
-7. J
+7. JSR: "jump to subroutine" <br>
+(jsr (50) (10)) => "M[50] <- PC; PC <- 10" <br>
+Note the value of PC saved into (50) is the address of the next instruction after the JSR <br>
+JSR is sigificantly helpful for writing the compiler <br> <br>
 
 The following grammar tree of PRIMPL is provided in Haskell <br> <br>
 program	 	=	 	stmt-or-value ... <br>
