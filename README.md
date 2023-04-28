@@ -1,5 +1,8 @@
 # Primpl-Assembler
 This assembler was done as an assignment question of CS 146, W23 offering, instructed by Brad Lushman, at the University of Waterloo. Relevant assignment is [Q8:Assembler](https://github.com/hg2006/Primpl-Assembler-W23-CS-146/issues/1#issue-1687729289).
+## __Table of Contents__
+- [Motivation of PRIMPL](#PRIMPL: A primitive imperative language for teaching use)
+
 ## PRIMPL: A primitive imperative language for teaching use
 PRIMPL is a virtual machine language designed by the CS 146 instructor team at the University of Waterloo for teaching use, with PRIMPL stands for _"primitive imperative language"_. The instructor also designed a corresponding assembly language for PRIMPL, namely A-PRIMPL. PRIMPL is an intermediate step in the course after the thorough discussion of C, and an instructor-designed imperative language: SIMPL (given that the grammar of language is very simple and it supports very little features). This will lead to the next language introduced in the course, MMIX.
 <br> <br>
@@ -86,8 +89,8 @@ program	 	=	 	stmt-or-value ... <br>
    If (data A 1 2 3 4) is the fifth instruction in A-PRIMPL, then 1 will be placed on the fifth memory vector location in PRIMPL, 2 on the sixth, and so on. All occurrences of A will be replaced by 5, which is the place for 1. <br> <br>
  	 &emsp;&emsp;	|	 	(data psymbol (nat psymbol-or-value)) <br>
   (data A (5 1)) is equivalent to (data A 1 1 1 1 1) <br> <br>
- 	 &emsp;&emsp;	|	 	(label psymbol) <br> <br>
+ 	 &emsp;&emsp;	|	 	(label psymbol) <br>
    no entry in PRIMPL array <br>
    E.g. (label A), the psymbol A is bound to the index of the memory vector where the next actual instruction would be loaded, and we can subsequently use psymbols labelled as targets for branch & jump. <br> <br> 
-Please refer to 
+Please refer to [Q8:Assembler](https://github.com/hg2006/Primpl-Assembler-W23-CS-146/issues/1#issue-1687729289) for further details and restrictions on the use of psymbols in A-PRIMPL.
 
