@@ -4,9 +4,9 @@ This assembler was done as an assignment question of CS 146, W23 offering, instr
 - [Motivation & Simulation of PRIMIPL](#motivation-and-simulation-of-primpl)
 - [Some Lies about PRIMPL](#some-lies)
 - [The Project](#the-project)
-- [Grammar and Other Details of PRIMPL](#grammar-and-other-details-of-primpl-(grammar-provided-in-haskell))
+- [Grammar and Other Details of PRIMPL](#grammar-and-other-details-of-primpl)
 
-## Motivation & Simulation of PRIMIPL
+## Motivation and Simulation of PRIMIPL
 PRIMPL is a virtual machine language designed by the CS 146 instructor team at the University of Waterloo for teaching use, with PRIMPL stands for _"primitive imperative language"_. The instructor also designed a corresponding assembly language for PRIMPL, namely A-PRIMPL. PRIMPL is an intermediate step in the course after the thorough discussion of C, and an instructor-designed imperative language: SIMPL (given that the grammar of language is very simple and it supports very little features). This will lead to the next language introduced in the course, MMIX.
 <br> <br>
 Modern computers put both programs and data into memory. To approach this situation, a vector ("array" in Racket) will be used as the main data structure of PRIMPL, to hold both the program and its data. We will call this vector "PRIMPL memory" (or just "memory" at times). The program will be able to change the data in PRIMPL memory through mutation, it can also potentially change itself (this will not happen in the assignment though). As above, it's convenient enough to make a simulator using Racket vector, with each slot of the vector holding one instruction or data.
