@@ -97,3 +97,4 @@ program	 	=	 	stmt-or-value ... <br>
    E.g. (label A), the psymbol A is bound to the index of the memory vector where the next actual instruction would be loaded, and we can subsequently use psymbols labelled as targets for branch & jump. <br> <br> 
 Please refer to [Q8:Assembler](https://github.com/hg2006/Primpl-Assembler-W23-CS-146/issues/1#issue-1687729289) for further details and restrictions on the use of psymbols in A-PRIMPL.
 
+## An Example Program in A-PRIMPL and PRIMPL
