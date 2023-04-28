@@ -104,5 +104,41 @@ program	 	=	 	stmt-or-value ... <br>
 Please refer to [Q8:Assembler](https://github.com/hg2006/Primpl-Assembler-W23-CS-146/issues/1#issue-1687729289) for further details and restrictions on the use of psymbols in A-PRIMPL.
 
 ## An Example Program in A-PRIMPL and PRIMPL
-This A-PRIMPL program below calculates and prints the powers of 2, from 1 to 10:
+This A-PRIMPL program below calculates and prints the powers of 2, from 1 to 10: <br>
+```racket 
+    '((gt (11) (9) 0)    ; 0: tmp1 <- x > 0
+    (branch (11) 3)      ; 1: if tmp1 goto 3
+    (jump 8)             ; 2: goto 8
+    (mul (10) 2 (10))    ; 3: y <- 2 * y
+    (sub (9) (9) 1)      ; 4: x <- x - 1
+    (print-val (10))     ; 5: print y
+    (print-string "\n")  ; 6: print "\n"
+    (jump 0)             ; 7: goto 0
+     0                   ; 8: 0 [number, halts program]
+     10                  ; 9: x
+     1                   ; 10: y
+     0)                  ; 11: tmp1 
+ ```
+ 
+ The PRIMPL program below is produced by assmbling the A-PRIMPL code above using [our program](...)
+ ```racket
+  (gt (11) (9) 0)      ; 0: tmp1 <- x > 0
+  (branch (11) 3)      ; 1: if tmp1 goto 3
+  (jump 8)             ; 2: goto 8
+  (mul (10) 2 (10))    ; 3: y <- 2 * y
+  (sub (9) (9) 1)      ; 4: x <- x - 1
+  (print-val (10))     ; 5: print y
+  (print-string "\n")  ; 6: print "\n"
+  (jump 0)             ; 7: goto 0
+   0                   ; 8: 0 [number, halts program]
+   10                  ; 9: x
+   1                   ; 10: y
+   0                   ; 11: tmp1
+ ```
+ 
+ 
+     
+
+     
+     
 
