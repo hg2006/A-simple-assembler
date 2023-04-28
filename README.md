@@ -9,33 +9,34 @@ This project is about writing an assembler from A-PRIMPL to PRIMPL, completed as
 program	 	=	 	stmt-or-value ... <br>
  	 	 	 	 
   stmt	 	=	 	(add dest opd opd) <br>
- 	 	|	 	(sub dest opd opd)
- 	 	|	 	(mul dest opd opd)
- 	 	|	 	(div dest opd opd)
- 	 	|	 	(mod dest opd opd)
- 	 	|	 	(gt dest opd opd)
- 	 	|	 	(ge dest opd opd)
- 	 	|	 	(lt dest opd opd)
- 	 	|	 	(le dest opd opd)
- 	 	|	 	(equal dest opd opd)
- 	 	|	 	(not-equal dest opd opd)
- 	 	|	 	(land dest opd opd)
- 	 	|	 	(lor dest opd opd)
- 	 	|	 	(lnot dest opd)
- 	 	|	 	(jump opd)
- 	 	|	 	(branch opd opd)
- 	 	|	 	(move dest opd)
- 	 	|	 	(print-val opd)
- 	 	|	 	(print-string string)
+ 	&emsp;&emsp; 	|	 	(sub dest opd opd) <br>
+ 	&emsp;&emsp; 	|	 	(mul dest opd opd) <br>
+ 	&emsp;&emsp;	|	 	(div dest opd opd) <br>
+ 	&emsp;&emsp; 	|	 	(mod dest opd opd) <br>
+ 	&emsp;&emsp; 	|	 	(gt dest opd opd) <br>
+ 	&emsp;&emsp; 	|	 	(ge dest opd opd)<br>
+ 	&emsp;&emsp; 	|	 	(lt dest opd opd)<br>
+ 	&emsp;&emsp; 	|	 	(le dest opd opd)<br>
+ 	&emsp;&emsp; 	|	 	(equal dest opd opd)<br>
+ 	&emsp;&emsp; 	|	 	(not-equal dest opd opd)<br>
+ 	&emsp;&emsp; 	|	 	(land dest opd opd)<br>
+ 	&emsp;&emsp; 	|	 	(lor dest opd opd)<br>
+ 	&emsp;&emsp; 	|	 	(lnot dest opd)<br>
+ 	&emsp;&emsp; 	|	 	(jump opd)<br>
+ 	&emsp;&emsp; 	|	 	(branch opd opd)<br>
+ 	&emsp;&emsp; 	|	 	(move dest opd)<br>
+ 	&emsp;&emsp; 	|	 	(print-val opd)<br>
+ 	&emsp;&emsp; 	|	 	(print-string string)<br>
  	 	 	 	 
-  opd	 	=	 	imm
- 	 	|	 	ind
- 	 	|	 	(imm ind)
+  opd	 	=	 	imm<br>
+ 	&emsp;&emsp; 	|	 	ind<br>
+ 	&emsp;&emsp; 	|	 	(imm ind)<br>
  	 	 	 	 
-  dest	 	=	 	ind
- 	 	|	 	(imm ind)
+  dest	 	=	 	ind<br>
+ 	&emsp;&emsp; 	|	 	(imm ind)<br>
  	 	 	 	 
-  imm	 	=	 	integer
- 	 	|	 	boolean
+  imm	 	=	 	integer<br>
+ 	&emsp;&emsp; 	|	 	boolean<br>
  	 	 	 	 
-  ind	 	=	 	(nat)
+  ind	 	=	 	(nat) <br>
+  e.g. 12 means 12, and (12) means to fetch the value at memory location 12
