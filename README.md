@@ -5,7 +5,7 @@ PRIMPL is a virtual machine language designed by the CS 146 instructor team at t
 <br> <br>
 Modern computers put both programs and data into memory. To approach this situation, a vector ("array" in Racket) will be used as the main data structure of PRIMPL, to hold both the program and its data. We will call this vector "PRIMPL memory" (or just "memory" at times). The program will be able to change the data in PRIMPL memory through mutation, it can also potentially change itself (this will not happen in the assignment though). As above, it's convenient enough to make a simulator using Racket vector, with each slot of the vector holding one instruction or data.
 <br> <br>
-Note there are still some remaining "higher-level" features of PRIMPL that makes it "unrealistic" as it's supposed to be a machine language. For one thing, locations have fixed size (32 or 64 bits) but PRIMPL pretends they do not. Also, PRIMPL still supports unbounded integers for teaching convenience.
+Note there are still some remaining "higher-level" features of PRIMPL that makes it "unrealistic" as it's supposed to be a machine language. For one thing, locations have fixed size (32 or 64 bits) but PRIMPL pretends they do not. Also, PRIMPL still supports unbounded integers for teaching convenience. Another element of PRIMPL that's not usually seen among low-level languages is that printing is given free as an instruction, again, for the convenience.
 <br> <br>
 This project is about writing an assembler from A-PRIMPL to PRIMPL, completed as an assignment question of CS 146, W23 offering. No starter code has been given except for the [PRIMPL simulator](PRIMPL.rkt), which was for the use of helping understand the core of PRIMIPL as well as facilitating debugging process. Considering its difficulty, the instructor team has allowed this assignment to be completed in pairs.
 
@@ -17,7 +17,19 @@ PC is a variable that holds the location of the next instruction to be executed.
 2. Operands <br>
 For operands, we need to distinguish between 12 and fetch (12). <br>
 We will define 12 as referring to number 12, and (12) as fetching the value at location 12.  <br>
- 
+
+3. Operations <br>
+Regular op: add sub mul div mod equal not-equal gt ge lt le land lor lnot <br>
+e.g. (add (15) (11) (12)) => "M\[15] (value at memory location 15) <- M\[11] + M\[12]" <br>
+&emsp; (add (15) (11) 1) => "M\[15] <- M\[11] + 1" <br>
+
+4. Move <br>
+(move (10) (12)) => "M\[10] <- M\[12]" <br>
+
+5. Jump & Branch <br>
+(jump 12) => "PC <- 12"
+(branch (20) 12) "if M\[20]then PC <- 12"
+
 program	 	=	 	stmt-or-value ... <br>
  	 	 	 	 
   stmt	 	=	 	(add dest opd opd) <br>
