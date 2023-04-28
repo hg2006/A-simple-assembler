@@ -69,3 +69,25 @@ program	 	=	 	stmt-or-value ... <br>
  	 	 	 	 
   ind	 	=	 	(nat) <br>
   <br>
+  
+  ## A-PRIMPL: The Assembly Language for PRIMPL
+ The A-PRIMPL grammar has the above rules, with every occurrence of ```imm``` replaced by ```psymbol-or-imm```, which means that either a PRIMPL ```operand``` or a ```psymbol```  (PRIMPL symbol) can be used. A ```psymbol``` satisfies the same spelling rules as a Racket symbol but has no explicit apostrophe. We do the same thing for ind. <br> <br>
+ A-PRIMPL also adds the following grammmar rules for pseudo-instructions: <br> <br>
+  stmt	 	=	 	(halt) <br>
+  stop the program, just produce 0 in PRIMPL <br> <br>
+ 		&emsp;&emsp; |	 	(lit psymbol-or-value) <br>
+   "literal": insert value 4 here (for readability) <br> <br>
+ 	 &emsp;&emsp;	|	 	(const psymbol psymbol-or-value) <br>
+   creates a psymbol with the given name, and value 6 <br>
+   does not generate an entry in PRIMPL Array<br>
+   acts like macro #define in C. For example, (const A 6) would replace all occurrenecs of A with 6 <br> <br>
+ 		&emsp;&emsp; |	 	(data psymbol psymbol-or-value ...) <br>
+   E.g. (data A 1 2 3 4), here A has the value of the index of the memory vector location where the first data item (the 1) is stored, and can be used in place of any indirect operand. The following data items (2, 3, and 4) are stored in consecutive memory locations following the first one. 
+   If (data A 1 2 3 4) is the fifth instruction in A-PRIMPL, then 1 will be placed on the fifth memory vector location in PRIMPL, 2 on the sixth, and so on. All occurrences of A will be replaced by 5, which is the place for 1. <br> <br>
+ 	 &emsp;&emsp;	|	 	(data psymbol (nat psymbol-or-value)) <br>
+  (data A (5 1)) is equivalent to (data A 1 1 1 1 1) <br> <br>
+ 	 &emsp;&emsp;	|	 	(label psymbol) <br> <br>
+   no entry in PRIMPL array <br>
+   E.g. (label A), the psymbol A is bound to the index of the memory vector where the next actual instruction would be loaded, and we can subsequently use psymbols labelled as targets for branch & jump. <br> <br> 
+Please refer to 
+
