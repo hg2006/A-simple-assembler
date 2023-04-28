@@ -27,8 +27,13 @@ e.g. (add (15) (11) (12)) => "M\[15] (value at memory location 15) <- M\[11] + M
 (move (10) (12)) => "M\[10] <- M\[12]" <br>
 
 5. Jump & Branch <br>
-(jump 12) => "PC <- 12"
-(branch (20) 12) "if M\[20]then PC <- 12"
+(jump 12) => "PC <- 12" <br>
+(branch (20) 12) "if M\[20]then PC <- 12" <br>
+
+6. Print <br>
+(print-val 21) <br>
+(print (15)) <br>
+(print-string "\n") <br>
 
 program	 	=	 	stmt-or-value ... <br>
  	 	 	 	 
