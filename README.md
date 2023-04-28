@@ -87,7 +87,7 @@ program	 	=	 	stmt-or-value ... <br>
   stmt	 	=	 	(halt) <br>
   stop the program, just produce 0 in PRIMPL <br> <br>
  		&emsp;&emsp; |	 	(lit psymbol-or-value) <br>
-   "literal": insert value 4 here (for readability) <br> <br>
+   "literal": E.g. (lit 4) means to insert value 4 here (for readability) <br> <br>
  	 &emsp;&emsp;	|	 	(const psymbol psymbol-or-value) <br>
    creates a psymbol with the given name, and value 6 <br>
    does not generate an entry in PRIMPL Array<br>
