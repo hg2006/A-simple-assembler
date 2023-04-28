@@ -1,6 +1,18 @@
 #lang racket
 
+;;----------------------------- Introduction --------------------------------------------------------
+
+;; Below is a simulator for a virtual machine language PRIMPL, provided by CS 146 instructor team
+;; for the use of teaching and helping complete the assignments.
+
+;; Provide the core functions of this simulator to other racket files
+;; To run the simulator with a list of instructions, first call (load-primp lst-instr), and then
+;; call (run-primp)
 (provide load-primp run-primp)
+
+;;----------------------------- Simulator ----------------------------------------------------------- 
+
+;; up to 10000 instruction/data can be supported
 
 (define MEM-SIZE 10000)
 
