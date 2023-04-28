@@ -278,7 +278,7 @@
 
 ;;------------------------------- Example Program ---------------------------------------------------
 
-;; This PRIMPL program below calculates and prints the powers of 2, from 1 to 10:
+;; This PRIMPL program below calculates and prints the powers of 2, from 1 to 10, each taking a line:
 
 (define test-prog
   '((gt (11) (9) 0)      ; 0: tmp1 <- x > 0
