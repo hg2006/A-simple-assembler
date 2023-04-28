@@ -81,6 +81,7 @@ program	 	=	 	stmt-or-value ... <br>
   <br>
   
   ## A-PRIMPL: The Assembly Language for PRIMPL
+ As the assembly language for PRIMPL, A-PRIMPL supports some high-level features to facilitate coding. These features provided in A-PRIMPL can make the process of compiling even higher level language to A-PRIMPL significantly easier (this compiler is also [available here]), and we can subsequently use this assembler to convert the code into PRIMPL.
  The A-PRIMPL grammar has the above rules, with every occurrence of ```imm``` replaced by ```psymbol-or-imm```, which means that either a PRIMPL ```operand``` or a ```psymbol```  (PRIMPL symbol) can be used. A ```psymbol``` satisfies the same spelling rules as a Racket symbol but has no explicit apostrophe. We do the same thing for ind. <br> <br>
  A-PRIMPL also adds the following grammmar rules for pseudo-instructions: <br> <br>
   stmt	 	=	 	(halt) <br>
