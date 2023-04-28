@@ -1,7 +1,10 @@
 # Primpl-Assembler
 This assembler was done as an assignment question of CS 146, W23 offering, instructed by Brad Lushman, at the University of Waterloo. Relevant assignment is [Q8:Assembler](https://github.com/hg2006/Primpl-Assembler-W23-CS-146/issues/1#issue-1687729289).
 ## __Table of Contents__
-- [Motivation & Simulation of PRIMIPL](#motivation-&-simnulation-of-primpl)
+- [Motivation & Simulation of PRIMIPL](#motivation-&-simulation-of-primpl)
+- [Some Lies about PRIMPL](#some-lies)
+- [The Project](#the-project)
+- [Grammar and Other Details of PRIMPL](#grammar-and-other-details-of-primpl-(grammar-provided-in-haskell))
 
 ## Motivation & Simulation of PRIMIPL
 PRIMPL is a virtual machine language designed by the CS 146 instructor team at the University of Waterloo for teaching use, with PRIMPL stands for _"primitive imperative language"_. The instructor also designed a corresponding assembly language for PRIMPL, namely A-PRIMPL. PRIMPL is an intermediate step in the course after the thorough discussion of C, and an instructor-designed imperative language: SIMPL (given that the grammar of language is very simple and it supports very little features). This will lead to the next language introduced in the course, MMIX.
@@ -15,7 +18,7 @@ Note there are still some remaining "higher-level" features of PRIMPL that makes
 This project is about writing an assembler from A-PRIMPL to PRIMPL, completed as an assignment question of CS 146, W23 offering. No starter code has been given except for the [PRIMPL simulator](PRIMPL.rkt), which was for the use of helping understand the core of PRIMIPL as well as facilitating debugging process. Considering its difficulty, the instructor team has allowed this assignment to be completed in pairs.
 <br><br>
 
-## Grammar and Other Details of Primpl (Grammar Provided in Haskell)
+## Grammar and Other Details of PPRIMPL (Grammar Provided in Haskell)
 
 1. PC (Program Counter) <br>
 PC is a variable that holds the location of the next instruction to be executed. It is assumed to be a separate variable outside of the RAM (This corresponds to the fact that the role of PC is played by a special register). 
