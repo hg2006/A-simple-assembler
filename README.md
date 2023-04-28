@@ -5,6 +5,7 @@ This assembler was done as an assignment question of CS 146, W23 offering, instr
 - [Some Lies about PRIMPL](#some-lies)
 - [The Project](#the-project)
 - [Grammar and Other Details of PRIMPL](#grammar-and-other-details-of-primpl)
+- [An Example Program in A-PRIMPL and PRIMPL](#an-example-program-in-a-primpl-and-primpl)
 
 ## Motivation and Simulation of PRIMPL
 PRIMPL is a virtual machine language designed by the CS 146 instructor team at the University of Waterloo for teaching use, with PRIMPL stands for _"primitive imperative language"_. The instructor also designed a corresponding assembly language for PRIMPL, namely A-PRIMPL. PRIMPL is an intermediate step in the course after the thorough discussion of C, and an instructor-designed imperative language: SIMPL (given that the grammar of language is very simple and it supports very little features). This will lead to the next language introduced in the course, MMIX.
