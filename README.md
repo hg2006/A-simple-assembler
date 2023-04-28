@@ -13,6 +13,7 @@ Note there are still some remaining "higher-level" features of PRIMPL that makes
 <br> <br>
 ## The Project
 This project is about writing an assembler from A-PRIMPL to PRIMPL, completed as an assignment question of CS 146, W23 offering. No starter code has been given except for the [PRIMPL simulator](PRIMPL.rkt), which was for the use of helping understand the core of PRIMIPL as well as facilitating debugging process. Considering its difficulty, the instructor team has allowed this assignment to be completed in pairs.
+<br><br>
 
 ## Grammar and Other Details of Primpl (Grammar Provided in Haskell)
 
