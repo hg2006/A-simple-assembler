@@ -9,7 +9,7 @@ Note there are still some remaining "higher-level" features of PRIMPL that makes
 <br> <br>
 This project is about writing an assembler from A-PRIMPL to PRIMPL, completed as an assignment question of CS 146, W23 offering. No starter code has been given except for the [PRIMPL simulator](PRIMPL.rkt), which was for the use of helping understand the core of PRIMIPL as well as facilitating debugging process. Considering its difficulty, the instructor team has allowed this assignment to be completed in pairs.
 
-## Grammar and other details of Primpl (Grammar Provided In Haskell)
+## Grammar and other details of Primpl (Grammar Provided in Haskell)
 
 1. PC (Program Counter) <br>
 PC is a variable that holds the location of the next instruction to be executed. It is assumed to be a separate variable outside of the RAM (This corresponds to the fact that the role of PC is played by a special register). 
