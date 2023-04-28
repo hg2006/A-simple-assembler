@@ -45,6 +45,8 @@ e.g. (add (15) (11) (12)) => "M\[15] (value at memory location 15) <- M\[11] + M
 (print (15)) <br>
 (print-string "\n") <br> <br>
 
+7. J
+
 The following grammar tree of PRIMPL is provided in Haskell <br> <br>
 program	 	=	 	stmt-or-value ... <br>
  	 	 	 	 
