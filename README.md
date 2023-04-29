@@ -125,7 +125,7 @@ This A-PRIMPL program below calculates and prints the powers of 2, from 1 to 10:
        0)                  ; 11: tmp1 
  ```
  
- The PRIMPL program below is produced by assmbling the A-PRIMPL code above using [our program](...)
+ The PRIMPL program below is produced by assmbling the A-PRIMPL code above using [our program](Assembler.rkt)
  ```racket
    '((gt (11) (9) 0)      ; 0: tmp1 <- x > 0
      (branch (11) 3)      ; 1: if tmp1 goto 3
