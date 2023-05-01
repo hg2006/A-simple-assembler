@@ -24,7 +24,7 @@
 ;;    1
 ;;    2)
 
-;; Several examples of assembling are provided at the end in the form of check-expect
+;; Several examples of assembling are provided at the end.
 
 ;; ----------------------------- Helper: Expand -----------------------------------------------------
 
