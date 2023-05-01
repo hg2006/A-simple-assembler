@@ -2,15 +2,18 @@
 
 ;; ----------------------------- At the Beginning ---------------------------------------------------
 
-;; Uncomment this to enable the use of PRIMPL simulator
-;; (require "PRIMPL.rkt")
+;; This project is available on Github: https://github.com/hg2006/A-simple-assembler
 
-;; Uncomment this to provide the assembler to other racket files
-;;(provide primpl-assemble)
-
-;; This is an assembler that assembles A-PRIMPL to the virtual machine language, PRIMPL. For a
+;; This is an assembler that assembles A-PRIMPL to the artificial machine language, PRIMPL. For a
 ;; thorough explanations of grammar of PRIMPL, its designation, and new features supported in
 ;; A-PRIMPL, please refer to the README file.
+
+;; Uncomment this to enable the use of PRIMPL simulator
+;; (Refer to the Github Page for PRIMPL.rkt, remember to put files under the same directory)
+;; (require "PRIMPL.rkt")
+
+;; Provide the assembler to other racket files under the same directory
+(provide primpl-assemble)
 
 ;; An A-PRIMPL program should be put into the function primpl-assemble as a list, with each element
 ;; of the list being an A-PRIMPL instruction/data, presented in list form.
