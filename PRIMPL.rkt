@@ -1,6 +1,6 @@
 #lang racket
 
-;;----------------------------- Introduction --------------------------------------------------------
+;;----------------------------- At the beginning ----------------------------------------------------
 
 ;; Below is a simulator for a virtual machine language PRIMPL, provided by CS 146 instructor team
 ;; for the use of teaching and helping complete the assignments.
@@ -9,6 +9,8 @@
 ;; To run the simulator with a list of instructions, first call (load-primp lst-instr), and then
 ;; call (run-primp)
 (provide load-primp run-primp)
+
+;; An example has been provided at the end.
 
 ;;----------------------------- Simulator ----------------------------------------------------------- 
 
@@ -299,5 +301,3 @@
 ;(load-primp test-prog)
 ;(run-primp)
 
-;(load-primp test-prog)
-;(run-primp)
