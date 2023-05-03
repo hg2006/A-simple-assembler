@@ -1,4 +1,4 @@
-# Primpl-Assembler
+# Primpl-Assembler, CS 146, W23
 This assembler was done as an assignment question of CS 146, W23 offering, instructed by Brad Lushman, at the University of Waterloo. Relevant assignment is [Q8:Assembler](https://github.com/hg2006/Primpl-Assembler-W23-CS-146/issues/1#issue-1687729289).
 ## __Table of Contents__
 - [Motivation & Simulation of PRIMIPL](#motivation-and-simulation-of-primpl)
